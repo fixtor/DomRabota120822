@@ -21,12 +21,14 @@ Console.WriteLine("Введите 1-е число больше 10:");
 int number = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите 2-е число больше 10:");
 int number2 = Convert.ToInt32(Console.ReadLine());
-if (numberLenght(number) == numberLenght(number2))
+
+if (numberLenght(number) == numberLenght(number2)) //Проверяем совпадают ли по длине числа
 {
-    if (getBackDigit(number) == number2)
+    if (getBackDigit(number) == number2) // Cравниваем перевернутое число с заданным палиндром
         Console.WriteLine($"Введеное вами 1 число {number} Является палиндромом {number2}");
     else
         Console.WriteLine($"Введеное вами 1 число {number} Не является палиндромом {number2}!!!");
 }
 else
     Console.WriteLine($"Введеное вами 1 число {number} отлично по длине от {number2}");
+    
