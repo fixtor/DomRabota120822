@@ -6,13 +6,13 @@
     return i;
 }
 
-int getBackDigit(int number) // Игра переверни число
+int getBackDigit(int num) // Игра переверни число
 {
     int counter = 0;
-    while (number > 0)
+    while (num > 0)
     {
-        counter = counter * 10 + number % 10;
-        number /= 10;
+        counter = counter * 10 + num % 10;
+        num /= 10;
     }
     return counter;
 }
